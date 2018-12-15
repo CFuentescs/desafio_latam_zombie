@@ -4,7 +4,7 @@ class ZombiesController < ApplicationController
   # GET /zombies
   # GET /zombies.json
   def index
-    @zombies = Zombie.all #Modelo
+    @zombies = current_user.zombies  #Modelo
   end
 
   # GET /zombies/1
@@ -25,6 +25,7 @@ class ZombiesController < ApplicationController
   # POST /zombies.json
   def create
     @zombie = Zombie.new(zombie_params)
+    @zombie.user = current_user
 
     respond_to do |format|
       if @zombie.save

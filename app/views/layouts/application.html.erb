@@ -15,8 +15,14 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  
   <body>
+   
+      <%= render "shared/navbar" %>
+   
+    <%if alert %>
+      <p class="alert alert-warning"><%= alert %></p>
+    <% end %>
     <%= yield %>
   </body>
 </html>
