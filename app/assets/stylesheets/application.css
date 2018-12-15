@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+.input_sesion 
+{
+	width: 200px;
+}
+
+.center {
+
+position:absolute;
+top: 22%;
+margin-left: 41.5%;
+
+}
