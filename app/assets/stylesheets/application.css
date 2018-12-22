@@ -26,3 +26,10 @@ top: 22%;
 margin-left: 41.5%;
 
 }
+img 
+{	
+	border-style: solid;
+	border-color: #73abff;
+	border-width: 3px;
+	width: 100px;
+}
